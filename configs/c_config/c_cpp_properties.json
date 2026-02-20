@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "compilerArgs": [
+                "-std=c2x",
+                "-Wall",
+                "-Wextra",
+                "-Werror=narrowing",
+                "-pedantic-errors",
+                "-fdiagnostics-color=always",
+                "-g",
+                "-fsanitize=address",
+                "-march=native"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c23",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
