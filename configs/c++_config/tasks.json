@@ -1,0 +1,45 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "make build",
+            "type": "shell",
+            "command": "make",
+            "args": ["debug"],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Makefileのdebugターゲットを実行します"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++ アクティブなファイルのビルド",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-std=c++20",
+                "-Wall",
+                "-Wextra",
+                "-Werror=narrowing",
+                "-pedantic-errors",
+                "-fdiagnostics-color=always",
+                "-g",
+                "-fsanitize=address",
+                "-march=native",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "デバッガーによって生成されたタスク。"
+        }
+    ]
+}
